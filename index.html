@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="陳世銘的教育AI">
+    <meta name="keywords" content="陳世銘, SEL, AI, 數位學習, sami.nibar.net, ai.at.tw, samichen@gmail.com">
+    <meta name="author" content="陳世銘">
+  <title>首頁 | Home</title>
+  <link rel="icon" href="icon/iwd.svg" type="image/svg+xml" sizes="any">
+  <style>
+    :root{
+      --bg:#0f1117; --bg2:#1a1d29; --card:#1e2230; --card2:#252a3d;
+      --line:#2e344e; --text:#e8eaf0; --muted:#a8adc3; --accent:#6c7bff; --accent2:#00d9ff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #1e2a5a 0%, transparent 60%),
+                  radial-gradient(900px 500px at 90% 0%, #2a1e5a 0%, transparent 60%),
+                  linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+      color:var(--text); min-height:100vh; display:flex; flex-direction:column;
+      align-items:center; padding:32px 16px 24px; line-height:1.7;
+    }
+    nav {
+      width: 100%; max-width: 860px; display: flex; justify-content: center;
+      gap: 20px; margin-bottom: 20px;
+    }
+    nav a {
+      color: var(--accent2); text-decoration: none; font-weight: 700;
+      padding: 8px 16px; border-radius: 8px; background: rgba(0,217,255,0.08);
+      border: 1px solid rgba(0,217,255,0.3); transition: all 0.3s ease;
+    }
+    nav a:hover { background: rgba(0,217,255,0.2); }
+    .wrap{ width:100%; max-width:860px; text-align: center; }
+    header{ margin:24px 0 28px; }
+    h1{ font-size:clamp(32px, 5vw, 44px); font-weight:800; line-height:1.2; }
+    h1 span{
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    }
+    main { display: block; }
+    .card{
+      background: linear-gradient(180deg, var(--card) 0%, var(--card2) 100%);
+      border:1px solid var(--line); border-radius:24px; padding:48px 36px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45), 0 1px 0 rgba(255,255,255,0.06) inset;
+    }
+    .btn-group {
+      display: flex; gap: 16px; justify-content: center; margin-top: 24px; flex-wrap: wrap;
+    }
+    .nav-btn {
+      display: inline-block; padding: 12px 32px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      color: #fff; text-decoration: none; font-weight: bold;
+      border-radius: 999px; transition: opacity 0.3s;
+    }
+    .nav-btn.outline {
+      background: transparent; border: 2px solid var(--accent2); color: var(--accent2);
+    }
+    .nav-btn:hover { opacity: 0.85; }
+    footer{ margin-top:28px; width:100%; max-width:860px; }
+    .site-copy{ text-align:center; font-size:11px; color:#A99C95; line-height:1.5; }
+    .site-copy a{ color:#2A9D8F; font-weight:800; text-decoration:none; }
+  </style>
+</head>
+<body>
+  
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="aboutme.html">個人介紹</a>
+    <a href="contact.html">聯絡我</a>
+  </nav>
+
+  <div class="wrap">
+    <header>
+      <h1><span>歡迎來到我的網站</span></h1>
+    </header>
+
+    <main class="card">
+      <p style="color: #a8adc3; font-size: 18px; margin-bottom: 12px;">這是一個展示個人資訊與作品的互動式網頁。</p>
+      <div class="btn-group">
+        <a href="aboutme.html" class="nav-btn">查看個人介紹</a>
+        <a href="contact.html" class="nav-btn outline">聯絡我</a>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <p class="site-copy">&copy; 2026 Dr.SaMi <a href="https://sami.nibar.net" target="SaMi" rel="noopener">陳世銘</a>（samichen@gmail.com）</p>
+  </footer>
+</body>
+</html>

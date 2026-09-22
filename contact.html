@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="陳世銘的教育AI">
+    <meta name="keywords" content="陳世銘, SEL, AI, 數位學習, sami.nibar.net, ai.at.tw, samichen@gmail.com">
+    <meta name="author" content="陳世銘">
+  <title>聯絡我 | Contact</title>
+  <link rel="icon" href="icon/iwd.svg" type="image/svg+xml" sizes="any">
+  <style>
+    :root{
+      --bg:#0f1117; --bg2:#1a1d29; --card:#1e2230; --card2:#252a3d;
+      --line:#2e344e; --text:#e8eaf0; --muted:#a8adc3; --accent:#6c7bff; --accent2:#00d9ff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, #1e2a5a 0%, transparent 60%),
+                  radial-gradient(900px 500px at 90% 0%, #2a1e5a 0%, transparent 60%),
+                  linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+      color:var(--text); min-height:100vh; display:flex; flex-direction:column;
+      align-items:center; padding:32px 16px 24px; line-height:1.7;
+    }
+    nav {
+      width: 100%; max-width: 860px; display: flex; justify-content: center;
+      gap: 20px; margin-bottom: 20px;
+    }
+    nav a {
+      color: var(--accent2); text-decoration: none; font-weight: 700;
+      padding: 8px 16px; border-radius: 8px; background: rgba(0,217,255,0.08);
+      border: 1px solid rgba(0,217,255,0.3); transition: all 0.3s ease;
+    }
+    nav a:hover { background: rgba(0,217,255,0.2); }
+    .wrap{ width:100%; max-width:600px; /* 表單頁面稍窄些視覺較佳 */ }
+    header{ text-align:center; margin:24px 0 28px; }
+    .badge{
+      display:inline-block; font-size:12px; letter-spacing:0.18em; color:var(--accent2);
+      border:1px solid rgba(0,217,255,0.3); background:rgba(0,217,255,0.08);
+      padding:6px 14px; border-radius:999px; margin-bottom:14px;
+    }
+    h1{ font-size:clamp(32px, 5vw, 44px); font-weight:800; letter-spacing:0.04em; line-height:1.2; }
+    h1 span{
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+    }
+    main { display: flex; flex-direction: column; gap: 24px; }
+    .card{
+      background: linear-gradient(180deg, var(--card) 0%, var(--card2) 100%);
+      border:1px solid var(--line); border-radius:24px; padding:36px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.45), 0 1px 0 rgba(255,255,255,0.06) inset;
+    }
+    .form-section h2 {
+      font-size:20px; font-weight:700; margin-bottom:16px; display:flex; align-items:center; gap:10px;
+    }
+    .form-section h2::before {
+      content:""; width:28px; height:3px; border-radius:999px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2)); display:inline-block;
+    }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; margin-bottom: 8px; color: #d6d9e8; font-size: 14px; }
+    .form-group input, .form-group textarea {
+      width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--line);
+      background: var(--bg); color: var(--text); font-family: inherit;
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      outline: none; border-color: var(--accent);
+    }
+    .submit-btn {
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      color: #fff; border: none; padding: 12px 24px; border-radius: 8px;
+      cursor: pointer; font-weight: bold; width: 100%; transition: opacity 0.3s;
+    }
+    .submit-btn:hover { opacity: 0.85; }
+
+    footer{ margin-top:28px; width:100%; text-align:center; }
+    .site-copy{ margin:2px 0 0; font-size:11px; color:#A99C95; line-height:1.5; }
+    .site-copy a{ color:#2A9D8F; font-weight:800; text-decoration:none; }
+    .site-copy a:hover{ text-decoration:underline; }
+
+    @media (max-width:720px){
+      .card { padding:28px 22px; }
+      .form-section h2 { justify-content:center; }
+    }
+  </style>
+</head>
+<body>
+  
+  <nav>
+    <a href="index.html">首頁</a>
+    <a href="aboutme.html">個人介紹</a>
+    <a href="contact.html">聯絡我</a>
+  </nav>
+
+  <div class="wrap">
+    <header>
+      <div class="badge">CONTACT · 聯絡我</div>
+      <h1><span>發送訊息</span></h1>
+    </header>
+
+    <main>
+      <section class="card form-section">
+        <h2>聯絡表單</h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">姓名 (必填)</label>
+            <input type="text" id="name" name="name" required placeholder="請輸入您的姓名">
+          </div>
+          <div class="form-group">
+            <label for="email">Email (必填)</label>
+            <input type="email" id="email" name="email" required placeholder="請輸入您的電子郵件">
+          </div>
+          <div class="form-group">
+            <label for="message">留言內容</label>
+            <textarea id="message" name="message" rows="5" placeholder="想對我說些什麼呢？"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">送出留言</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p class="site-copy">&copy; 2026 Dr.SaMi <a href="https://sami.nibar.net" target="SaMi" rel="noopener">陳世銘</a>（samichen@gmail.com）</p>
+  </footer>
+</body>
+</html>

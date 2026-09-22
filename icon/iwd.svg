@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <!-- 互動事件的動態漣漪 (Interactive Event Ripples) -->
+  <circle cx="60" cy="60" r="50" fill="none" stroke="#4CC9F0" stroke-width="2" stroke-dasharray="6 8" opacity="0.5"/>
+  <circle cx="60" cy="60" r="35" fill="none" stroke="#F4A261" stroke-width="2" opacity="0.3"/>
+
+  <!-- 網頁瀏覽器視窗 (Browser Window Framework) -->
+  <rect x="15" y="30" width="90" height="60" rx="8" fill="#1D3557" />
+  
+  <!-- 視窗控制按鈕 -->
+  <circle cx="25" cy="40" r="3" fill="#E63946" />
+  <circle cx="35" cy="40" r="3" fill="#F4A261" />
+  <circle cx="45" cy="40" r="3" fill="#2A9D8F" />
+
+  <!-- HTML 標籤結構與 UI 元件 (Code Tags & UI Element) -->
+  <!-- 左側 < 符號 -->
+  <path d="M 32 60 L 42 52 M 32 60 L 42 68" fill="none" stroke="#A8DADC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 右側 > 符號 -->
+  <path d="M 88 60 L 78 52 M 88 60 L 78 68" fill="none" stroke="#A8DADC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- 互動式按鈕 / 觸發區塊 -->
+  <rect x="50" y="52" width="20" height="16" rx="4" fill="#4CC9F0" />
+
+  <!-- 點擊游標 (Pointer Cursor - 象徵使用者互動) -->
+  <path d="M 55 58 L 72 75 L 65 77 L 70 88 L 64 91 L 59 79 L 52 84 Z" fill="#FFFFFF" stroke="#1D3557" stroke-width="2" stroke-linejoin="round"/>
+  
+  <!-- 點擊瞬間的互動火花 (Click Spark/Feedback) -->
+  <circle cx="55" cy="58" r="4" fill="#F4A261" />
+</svg>
